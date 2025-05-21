@@ -1,0 +1,57 @@
+.footer {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 1px solid #e0e0e0;
+  color: #333;
+}
+
+.footer p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.footer .social-icons {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer .social-icons a {
+  font-size: 22px;
+  color: #555;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Add color on hover (based on brand) */
+.footer .social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer .social-icons a:nth-child(1):hover { color: #3b5998; } /* Facebook */
+.footer .social-icons a:nth-child(2):hover { color: #e4405f; } /* Instagram */
+.footer .social-icons a:nth-child(3):hover { color: #0077b5; } /* LinkedIn */
+.footer .social-icons a:nth-child(4):hover { color: #1da1f2; } /* Twitter */
+.footer .social-icons a:nth-child(5):hover { color: #25d366; } /* WhatsApp */
+.cart-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 1.8rem;
+  color: #333;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+}

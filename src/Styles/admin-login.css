@@ -1,0 +1,34 @@
+.admin-login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 0 12px rgb(0 0 0 / 0.1);
+}
+
+.admin-login-form input,
+.admin-login-form button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+.admin-login-form button {
+  background-color: #1f2937;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-login-form button:hover {
+  background-color: #4b5563;
+}
+
+.error-msg {
+  color: red;
+  margin: 5px 0;
+}

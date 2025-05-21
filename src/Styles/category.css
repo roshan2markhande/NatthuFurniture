@@ -1,0 +1,62 @@
+.category-page {
+  padding: 40px;
+  background: #fdfdfd;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.category-page h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.category-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Add this class to your Filters component root */
+.filters {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  flex: 3;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .category-container {
+    flex-direction: column;
+  }
+
+  .filters {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .category-page {
+    padding: 20px;
+  }
+
+  .category-page h2 {
+    font-size: 24px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}

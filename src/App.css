@@ -1,0 +1,56 @@
+/* File: client/src/styles/app.css */
+.navbar {
+  background-color: #f3f4f6;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  background-color: #f3f4f6;
+  padding: 10px;
+  text-align: center;
+}
+
+.order {
+  max-width: 600px;
+  margin: auto;
+}
+
+.order input, .order select, .order textarea {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.admin-dashboard {
+  padding: 20px;
+  text-align: center;
+}
+
+.stats {
+  margin-bottom: 20px;
+}

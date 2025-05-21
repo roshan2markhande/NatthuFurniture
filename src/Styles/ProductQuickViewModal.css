@@ -1,0 +1,146 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 900px;
+  padding: 20px 30px;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.modal-body {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Image section */
+.modal-image-section {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.modal-image-nav {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav-btn {
+  background-color: #0077cc;
+  border: none;
+  padding: 8px 18px;
+  color: black;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #005fa3;
+}
+
+/* Info section */
+.modal-info {
+  flex: 1 1 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.modal-info h2 {
+  margin-bottom: 12px;
+  font-size: 28px;
+  color: #333;
+}
+
+.modal-info p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #555;
+}
+
+.modal-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cart-btn,
+.order-btn {
+  flex: 1 1 140px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  user-select: none;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.cart-btn {
+  background-color: #28a745;
+}
+
+.cart-btn:hover {
+  background-color: #218838;
+}
+
+.order-btn {
+  background-color: #0077cc;
+}
+
+.order-btn:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .modal-body {
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-info {
+    width: 100%;
+  }
+  .modal-image-section {
+    width: 100%;
+  }
+}
