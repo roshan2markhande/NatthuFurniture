@@ -16,10 +16,10 @@ import img8 from '../assets/kitchen.png';
 const Home = ({ scrollTo, cart, setCart }) => {
   const [products, setProducts] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
-
+const BASE_URL = 'https://natthu-backend.onrender.com';
   // Fetch products from backend
   useEffect(() => {
-    fetch('http://localhost:5000/api/products')
+    fetch(BASE_URL+'/api/products')
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.error('Failed to fetch products:', err));

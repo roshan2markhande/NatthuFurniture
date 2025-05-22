@@ -11,8 +11,10 @@ const Category = ({ addToCart }) => {
 
   useEffect(() => {
     const fetchProducts = async () => {
+            const BASE_URL = 'https://natthu-backend.onrender.com';
+
       try {
-        const response = await fetch('http://localhost:5000/api/products');
+        const response = await fetch(BASE_URL+'/api/products');
         if (!response.ok) throw new Error('Failed to fetch products');
         const data = await response.json();
         setProducts(data);

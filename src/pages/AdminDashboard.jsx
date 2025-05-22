@@ -26,8 +26,9 @@ const AdminDashboard = ({ onLogout }) => {
   // Fetch Orders
   useEffect(() => {
     const fetchOrders = async () => {
+      const BASE_URL = 'https://natthu-backend.onrender.com';
       try {
-        const res = await fetch('http://localhost:5000/api/orders');
+        const res = await fetch(BASE_URL+'/api/orders');
         const data = await res.json();
         setOrders(data);
       } catch (err) {
@@ -41,7 +42,7 @@ const AdminDashboard = ({ onLogout }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch('http://localhost:5000/api/products');
+        const res = await fetch(BASE_URL+'/api/products');
         const data = await res.json();
         setProducts(data);
       } catch (err) {

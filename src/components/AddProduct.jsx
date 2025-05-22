@@ -155,9 +155,9 @@ const AddProduct = () => {
     formData.append('catg', catg);
     if (image) formData.append('image', image);
     if (model) formData.append('model', model);  // <-- append model file
-
+const BASE_URL = 'https://natthu-backend.onrender.com';
     try {
-      const res = await fetch('http://localhost:5000/api/products', {
+      const res = await fetch(BASE_URL+'/api/products', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,
@@ -234,7 +234,7 @@ const AddProduct = () => {
             className="select-field"
           >
             <option value="" disabled>
-              Select category
+              Select category 
             </option>
             <option value="Sofa">Sofa</option>
             <option value="Chair">Chair</option>
@@ -273,3 +273,4 @@ const AddProduct = () => {
 };
 
 export default AddProduct;
+  

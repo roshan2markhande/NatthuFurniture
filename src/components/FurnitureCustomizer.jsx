@@ -125,10 +125,10 @@ const FurnitureCustomizer = () => {
       },
     },
   });
-
+const BASE_URL = 'https://natthu-backend.onrender.com';
   useEffect(() => {
     // Fetch products from backend
-    fetch('http://localhost:5000/api/products')
+    fetch(BASE_URL+'/api/products')
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
@@ -222,6 +222,7 @@ const FurnitureCustomizer = () => {
         </Suspense>
         <OrbitControls enablePan enableZoom enableRotate />
       </Canvas>
+
 
       <Leva collapsed />
     </div>
